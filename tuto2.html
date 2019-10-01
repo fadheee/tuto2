@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+  <meta charset="utf-8">
+
+  <title>Contact Details</title>
+
+  <style>
+
+    input:invalid
+    {
+      border: 2px dashed red;
+    }
+
+    input:valid
+    {
+      border: 2px solid turquoise;
+    }
+    
+  </style>
+  </head>
+
+  <body>
+    <fieldset>
+
+        <!-- method="get" refer to the address -->
+
+        <form action="cont.html" method="post">
+
+          <label for="name">Name</label>
+          <input type="text" name="yourname" required value="" >
+
+          <br><br>
+
+          <label for="email">Email</label>
+          <input type="email" id ="email" name="youremail" multiple required>
+          <!-- <input type="text" name="youremail" placeholder=""> -->
+          <br><br><br>
+
+          <fieldset>
+            <legend> What is your favourite subject?</legend>
+            <input type="radio" name="subj" value="maths" >Maths
+            <input type="radio" name="subj" value="sci" >Science
+            <input type="radio" name="subj" value="bio" >Biology
+          </fieldset>
+
+          <br><br><br>
+
+          <select name="study level">
+            <option value="sl" selected>Study Level</option>
+            <option value="ug">Undergraduate</option>
+            <option value="pg">Postgraduate</option>
+          </select>
+
+          <br><br><br><br><br><br><br><br>
+
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+        </form>
+    </fieldset>
+
+  </body>
+
+</html>
